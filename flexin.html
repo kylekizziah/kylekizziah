@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Config -->
+    <title>TESTING FLEX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  </head>
+  <body>
+    <style>
+      .demo{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items:center;
+      }
+      .content{
+        border: solid black 1px;
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        margin:5px;
+      }
+      .one{
+        width: 100%;
+      }
+      .two{
+        width:50%;
+      }
+      .three{
+        width:50%;
+      }
+      .four{
+        width:100%;
+      }
+      .five{
+        width:50%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+    </style>
+    <div class="demo">
+      <div class="content one">content1</div>
+      <div class="content two">content2</div>
+      <div class="content three">content3</div>
+      <div class="content four">content4</div>
+      <div class="content five">
+        <h1> HEADER 1</h1>
+        <p> paragraph</p>
+        <ul>
+          <li>list item 1</li>
+          <li>list item 2</li>
+          <li>list item 3</li>
+        </ul>
+      </div>
+
+    </div>
+  </body>
+</html>
